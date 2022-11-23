@@ -17,5 +17,5 @@ spec:
       - |
         while true
         do
-          sleep 5
+          sleep5
         done

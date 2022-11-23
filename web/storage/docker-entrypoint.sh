@@ -1,5 +1,6 @@
 #! /bin/sh
 
+
 INIT_FLAG_FILE=/data/db/init-completed
 INIT_LOG_FILE=/data/db/init-mongod.log
 
@@ -52,10 +53,10 @@ if [ ! -e ${INIT_LOG_FILE} ]; then
   echo
   echo "--- Initialize MongoDB ---"
   echo
-  start_mongod_as_daemon
-  create_user
-  create_initalize_flag
-  stop_mongod
+  start_mongod_as_daemon()
+  create_user()
+  create_initalize_flag()
+  stop_mongod()
 fi
 
 exec "$@"
